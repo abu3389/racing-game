@@ -1,0 +1,117 @@
+/*游戏界面*/
+.game_playing{
+  position: relative;
+  background:url("../images/gamebg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
+/*  border: 1px solid blue;*/
+  height: 100%;
+}
+/*游戏内容框架*/
+.gameDiv{
+	width: 800px;
+	height: 480px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-top: -240px;
+    margin-left: -400px;
+}
+/*速度计框架*/
+.speedDiv{
+	height: 50px;
+    width: 220px;
+/*    border: 1px solid red;*/
+    background:url("../images/speed.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+}
+/*速度计显示区域*/
+.speedShow{
+    height: 50px;
+    width: 0px;
+    background: url("../images/speedrect.png") no-repeat;
+    background-size: 213px 31px;
+    background-position: 3px 10px;
+}
+/*金币框架*/
+.goldDiV{
+	height: 64px;
+    width: 220px;
+/*    border: 1px solid red;*/
+    background:url("../images/coin.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+/*金币显示区域*/
+.goldShow{
+	display: inline-block;
+	position: absolute;
+    left: 35%;
+    top: 30%;
+    font-size: 30px;
+}
+/*比赛时间框架*/
+.timeDiv{
+	height: 64px;
+    width: 213px;
+/*    border: 1px solid red;*/
+    background:url("../images/timer.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 35%;
+    top: 2%;
+}
+/*比赛时间显示框架*/
+.timeShow{
+	display: inline-block;
+	position: absolute;
+    left: 35%;
+    top: 35%;
+    font-size: 30px;
+}
+/*开始倒计时框架*/
+.startTime{
+	height: 64px;
+    width: 213px;
+/*    border: 1px solid red;*/
+    background:url("../images/start.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 64%;
+    top: 2%;	
+}
+/*开始倒计时显示区域*/
+.startTimeShow{
+	display: inline-block;
+	position: absolute;
+    left: 45%;
+    top: 35%;
+    font-size: 25px;
+}
+/*排名名次*/
+.paiming{
+   	height: 64px;
+    width: 64px;
+/*    border: 1px solid red;*/
+    background:url("../images/num.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1%;
+    top: 2%;	
+}
+/*排名显示区域*/
+.paimingShow{
+	height: 60px;
+    width: 64px;
+/*    border: 1px solid red;*/
+    background:url("../images/1.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1%;
+    top: 2%;
+}

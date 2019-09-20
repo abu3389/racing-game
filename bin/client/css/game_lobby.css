@@ -1,0 +1,155 @@
+/*游戏大厅样式*/
+#game_lobby{
+  position: relative;
+  background-image:url("../images/lobby.png");
+  background-size: 100% 100% ;
+  /*border: 1px solid red;*/
+  height: 100%; 
+}
+/*玩家接本信息样式*/
+#userInfo{
+/*  border: 1px solid red;*/
+  position: absolute;
+  width: 30%;
+  height: 16%;
+  left: 0;
+  top: 0;
+  vertical-align: top;
+}
+/*玩家头像*/
+#userInfo>img{
+  border-radius: 100%;
+  width: 25%;
+  height: 85%;
+  padding: 2%; 
+}
+/*玩家基础信息*/
+.infoBase{
+  display: inline-block;
+  width: 61%;
+  height: 85%;
+/*  border: 1px solid red;*/
+  vertical-align: top;
+  padding: 2%;
+  font-size: 1vw;
+}
+/*玩家昵称*/
+#userName{
+  height: 30%;
+  line-height: 190%;
+  width: 60%;
+  display: inline-block;
+  background-color: white;
+  padding:2%;
+  margin: 2%;
+  border-radius: 10%;
+}
+/*玩家等级*/
+#userLevel{
+  width: 30%;
+  height:40%;
+  display: inline-block; 
+  position: absolute;
+}
+#levelNum{
+  display: inline-block;
+  font-size: 1.3vw;
+  position: absolute;
+  top:0;
+  left: 0;
+  margin-left: 88%;
+  margin-top: 4.5%;
+  width: 50%;
+}
+/*玩家战力*/
+#userPower{
+  height:30%;
+  width: 75%;
+  line-height: 190%;
+  background-color: white;
+  display: inline-block;
+  padding:2%;
+  margin: 2% 0 2% 2%;
+  border-radius: 10%;
+}
+/*查看玩家信息*/
+#lookInfoBtn{
+  border-radius: 100%;
+  width: 15%;
+  height: 40%;
+  cursor: pointer;
+  vertical-align: top;
+  margin: 2% 0 2% 0;
+}
+
+/*玩家金币*/
+#userGold{
+  background: url("../images/coin.png") no-repeat;
+  background-size: 100% 100%;
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 0.2%;
+}
+/*金币数量*/
+#goldNum{
+  font-size: 2vw;
+  display: inline-block;
+  position: absolute;
+  top:43%;
+  left:40%;
+}
+/*玩家功能区域*/
+#userFun{
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  left: 0;
+  bottom: 0;
+/*  border: 1px solid red;*/
+}
+/*玩家功能按钮*/
+.funSet,.funChat{
+  width: 15%;
+  height: 95%;
+  display: inline-block;
+/*  border: 1px solid red;*/
+  cursor: pointer;
+}
+/*设置*/
+#funSet{
+  background: url("../images/setGame.png") no-repeat;
+  background-size: 100% 100%;
+}
+/*聊天*/
+#funChat{
+  background: url("../images/chat.png") no-repeat;
+  background-size: 100% 100%;
+}
+/*开始游戏按钮*/
+#userStartGame{
+  background: url("../images/startGame.gif") no-repeat;
+  background-size: 100% 100%;
+  width: 15%;
+  height: 15%;
+  display: inline-block;
+/*  border: 1px solid red;*/
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/*关于我们按钮*/
+#userAbout{
+  background: url("../images/about.png") no-repeat;
+  background-size: 100% 100%;
+  width: 5%;
+  height: 10%;
+  display: inline-block;
+/*  border: 1px solid red;*/
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

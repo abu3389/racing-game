@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>越野机车</title>
+	<!-- 引用全局样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/global.css">
+	<!-- 引用注册样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/regist.css">
+	<!-- 引用登录样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<!-- 引用游戏大厅样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/game_lobby.css">
+	<!-- 引用游戏聊天室样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/game_chat.css">
+	<!-- 引用游戏等待样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/game_waiting.css">
+	<!-- 引用游戏界面样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/game_play.css">
+</head>
+<body>
+    <!-- 登录注册区域开始 -->
+    <div class="login_reg" id="login_reg">
+	    <!-- 注册模块开始 -->
+		<div class="reg_div" id="reg_div"  style="display: none;">
+	        <ul>
+	            <li class="reg_name">
+	                <img src="./images/login_user.png">
+	                <input type="text" name="name" class="userRegInput" id="user_reg_name">
+	                <span class="info">请输入昵称</span>
+	                <p class="input_info">*不能包括空格、5-8个字符、任意汉字、字母、数字、下划线组合</p>
+	            </li>
+	            <li class="reg_pwd">
+	                <img src="./images/login_pwd.png">
+	                <input type="password" name="password" class="userRegInput" id="user_reg_pwd">
+	                <span class="info">请输入密码</span>
+	                <p class="input_info">*不能包括空格、8-16个字符、必须包含字母、数字、符号中至少2种</p>
+	            </li>
+	        </ul>
+	        <span class="loginLink" id="loginLink">已有游戏账号？<br/>去登录>>></span>
+	        <div class="reg_btn" id="reg_btn"></div>
+		</div>
+		<!-- 注册模块结束 -->
+		<!-- 登录模块开始 -->
+		<div class="login_div" id="login_div" style="/*display: none*/;">
+	        <ul>
+	            <li>
+	                <img src="./images/login_user.png">
+	                <input type="text" name="name" placeholder="请输入昵称" class="loginRegInput" id="user_login_name">
+	            </li>
+	            <li>
+	                <img src="./images/login_pwd.png">
+	                <input type="password" name="password" placeholder="请输入密码" class="loginRegInput" id="user_login_pwd">
+	            </li>
+	        </ul>
+	        <span class="regLink" id="regLink">还没有游戏账号？<br/>快速注册>>></span>
+	        <div class="login_btn" id="login_btn"></div>
+		</div>
+		<!-- 登录模块结束 -->
+	</div>
+	<!-- 登录注册区域结束 -->
+	<!-- 游戏大厅区域开始 -->
+	<div class='game_lobby' id="game_lobby" style="display: none;">
+	    <!-- 游戏大厅用户信息 -->
+        <div class="userInfo" id="userInfo">
+            <!-- 用户头像 -->
+            <img src="./images/user_head.jpg">
+            <!-- 用户基础信息 -->
+            <div class="infoBase" id="infoBase">
+                <div class="userName" id="userName"></div>
+                <img src="./images/level.png" id="userLevel">
+                <span id="levelNum"></span>
+                <div class="userPower" id="userPower"></div>
+                <img src="./images/lookInfo.jpg" id="lookInfoBtn">
+            </div>
+        </div>
+        <!-- 游戏大厅用户金币 -->
+        <div class="userGold" id="userGold">
+           <!-- 金币数量显示 -->
+           <span class="goldNum" id="goldNum"></span>
+        </div>
+        <!-- 游戏大厅用户功能区 -->
+        <div class="userFun" id="userFun">
+            <!-- 设置功能按钮 -->
+            <span class="funSet" id="funSet"></span>
+            <!-- 聊天功能按钮 -->
+            <span class="funChat" id="funChat"></span>
+        </div>
+        <!-- 游戏大厅开始游戏按钮 -->
+        <div class="userStartGame" id="userStartGame"></div>
+        <!-- 游戏大厅关于我们 -->
+        <div class="userAbout" id="userAbout"></div>
+	</div>
+	<!-- 游戏大厅区域结束 -->
+	<!-- 游戏等待开始 -->
+	<div class='game_waiting' id='game_waiting' style="display: none;">
+	    <!-- 创建2V2对战玩家信息框 -->
+	    <div class="waitingInfo">
+	        <!-- 玩家1 -->
+	        <div class="waitingPlayer" id='waitingPlayer1'>
+	            <!-- 玩家头像 -->
+	            <div class="playerHead">
+                    <!-- 遮罩块 -->
+                    <div class="playerBodyBg"></div>
+	            </div>
+                <!-- 玩家信息 -->
+                <div class="playerBody" id='player1'>
+                    <!-- 昵称 -->
+                    <p>玩家1</p>
+                    <!-- 等级 -->
+                    <p>LV.1</p>
+                </div>
+                <!-- 玩家状态 -->
+                <div class='zhuangtai'>匹配中...</div>
+	        </div>
+	        <!-- VS -->
+	        <div class="waitingVS" id="waitingVS">VS</div>
+	        <!-- 玩家2 -->
+	        <div class="waitingPlayer" id='waitingPlayer2'>
+                <!-- 玩家头像 -->
+	            <div class="playerHead">
+                    <!-- 遮罩块 -->
+                    <div class="playerBodyBg"></div>
+	            </div>
+                <!-- 玩家信息 -->
+                <div class="playerBody" id='player2'>
+                    <!-- 昵称 -->
+                    <p>暂无玩家</p>
+                    <!-- 等级 -->
+                    <p></p>
+                </div>
+                <!-- 玩家状态 -->
+                <div class='zhuangtai'>等待玩家加入...</div>
+	        </div>
+	    </div>
+	    <!-- 取消匹配 -->
+	    <div class="cancelBtn" id='cancelBtn'><span id='cancelBtnTxt'>取消匹配</span></div>
+	</div>
+	<!-- 游戏等待结束 -->
+	<!-- 游戏场景开始 -->
+	<div class="game_playing" id='game_playing' style="display: none;">
+	    <!-- 游戏地图开始 -->
+	    <div class="gameDiv" id="gameDiv">
+	        <!-- 游戏画布 -->
+		    <canvas class="game_map" id='game_map' width="800px" height="480px"></canvas>
+		    <!-- 速度计 -->
+		    <div class="speedDiv" id='speedDiv'>
+		        <div class="speedShow" id="speedShow"></div>
+		    </div>
+		    <!-- 金币栏 -->
+		    <div class="goldDiV" id=goldDiv>
+		        <span class="goldShow" id="goldShow">0</span>
+		    </div>
+		    <!-- 比赛计时 -->
+		    <div class="timeDiv" id="timeDiv">
+		        <span class="timeShow" id="timeShow">0.00</span>
+		    </div>
+		    <!-- 比赛开始 -->
+		    <div class="startTime">
+		        <span class="startTimeShow" id="startTimeShow"></span>
+		    </div>
+		    <!-- 比赛名次 -->
+		    <div class="paiming" id="paiming">
+		        <span class="paimingShow" id="paimingShow"></span>
+		    </div>
+	    </div>
+	    <!-- 游戏地图结束 -->
+	</div>
+	<!-- 游戏场景结束 -->
+    <!-- 游戏背景音乐 -->
+    <audio id="bg_music" loop="loop" volume="0.6" autoplay="autoplay" src='./music/Theme.mp3' style="display: none;"></audio>
+</body>
+<!-- 引用JQ -->
+<script type="text/javascript" src='./js/jquery-1.11.min.js'></script>
+<!-- 引用全局公共JS -->
+<script type="text/javascript" src='./js/global.js'></script>
+<!-- 引用发送消息JS插件 -->
+<script type="text/javascript" src='./js/SendReceive_msg.js'></script>
+<!-- 引用注册JS模块 -->
+<script type="text/javascript" src='./js/regist.js'></script>
+<!-- 引用登录JS模块 -->
+<script type="text/javascript" src='./js/login.js'></script>
+<!-- 引用游戏大厅JS模块 -->
+<script type="text/javascript" src='./js/game_lobby.js'></script>
+<!-- 引用游戏聊天室JS模块 -->
+<script type="text/javascript" src='./js/game_chat.js'></script>
+<!-- 引用游戏匹配等待JS模块 -->
+<script type="text/javascript" src='./js/game_waiting.js'></script>
+<!-- 引用游戏过程JS模块 -->
+<script type="text/javascript" src='./js/game_play.js'></script>
+</html>
